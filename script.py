@@ -11,24 +11,13 @@ def readParams(filename):
         # returning from 2nd row
         return list(reader(iris, delimiter=','))[1:]
 
-'''
-Linux Driver Locations
-'''
-#chromedriver_location = "/usr/local/share/chromedriver"
-#chromedriver_binary_location = "/usr/bin/google-chrome"
+params = readParams('Ontario Covid Vaccine - Sheet1.csv')
 
-'''
-Windows Driver Location
-'''
-chromedriver_location="C:/Users/akaas/Downloads/chromedriver_win32/chromedriver.exe"
+chromedriver_location = params[0][7]
 
 driver = webdriver.Chrome(chromedriver_location)
 driver.implicitly_wait(5)
 driver.get('https://covid19.ontariohealth.ca/app-identity?viewId=9MYRZKKV92R7')
-
-#sleep(1)
-
-params = readParams('Ontario Covid Vaccine - Sheet1.csv')
 
 #Page 1
 hcn_xpath = '//*[@id="hcn"]'
