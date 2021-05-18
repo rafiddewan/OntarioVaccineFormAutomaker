@@ -8,6 +8,8 @@ A repo to automate the booking process for vaccinations
         - To know your chrome verison go to: https://www.google.com/chrome/update/
     - Unzip the chrome driver file
 - Must have python3 installed in the system
+- Install pip
+    - Do ```pip install selenium```
 
 # Steps to use
 - Copy the path of the chrome driver executable (.exe) and paste it into the last column in the CSV
