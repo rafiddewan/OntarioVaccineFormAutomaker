@@ -14,8 +14,7 @@ A repo to automate the booking process for vaccinations
 # Steps to use
 - Copy the path of the chrome driver executable (.exe) and paste it into the last column in the CSV
 - Enter your information for each corresponding column in the single row below
-- Run the executable by simply clicking on the executable when its time to book!
-    - Or you can schedule the executable here: https://towardsdatascience.com/automate-your-python-scripts-with-task-scheduler-661d0a40b279
+- Run script by executing ```python script.py```
 
 # Author
 - Rafid Dewan
